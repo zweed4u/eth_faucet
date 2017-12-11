@@ -1,0 +1,17 @@
+{
+    "browser_action": {
+        "default_icon": "logo.png",
+              "default_title": "Eth Faucet"
+       },
+       "content_scripts": [ {
+              "js": [ "eth.js" ],
+              "matches": [ "https://*.ethcombo.com/home.php*", "http://*.ethcombo.com/home.php*" ]
+       } ],
+       "description": "Automate slots at eth faucet",
+       "icons": {
+              "128": "logo.png"
+       },
+       "manifest_version": 2,
+       "name": "Eth Faucet",
+       "version": "1"
+}
